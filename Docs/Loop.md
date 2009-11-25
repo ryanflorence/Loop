@@ -8,7 +8,6 @@ A Utility Class. Its methods can be implemented with  [Class-implement][1] into 
 
 ### Demo:
 
-* [Simple Counter @ mooshell](http://mooshell.net/rpflo/Abzc4/)
 <iframe src="http://mooshell.net/rpflo/Abzc4/embedded/?tabs=result,js,html" style="width: 100%; height:275px"></iframe>
 
 ### Syntax:
