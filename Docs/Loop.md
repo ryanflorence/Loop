@@ -1,9 +1,9 @@
 Class: Loop {#Loop}
 ===================
 
-A Utility Class. Its methods can be implemented with  [Class-implement][1] into any [Class][2]. Used to run a class method on a periodical.
+<big>A Utility Class. Its methods can be implemented with  [Class-implement][1] into any [Class][2]. Used to run a class method on a periodical.
 
-Useful in galleries, slideshows, tickers, sprite animations, pulsing, logout scripts, etc.  Anything that needs to run the same function repeatedly.
+Useful in galleries, slideshows, tickers, sprite animations, pulsing, logout scripts, etc.  Anything that needs to run the same function repeatedly.</big>
 
 [1]: http://mootools.net/docs/core/Class/Class/#Class:implement
 [2]: http://mootools.net/docs/core/Class/Class
