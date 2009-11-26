@@ -23,3 +23,5 @@ Useful in galleries, slideshows, tickers, sprite animations, pulsing, logout scr
     });
     
     var myWidget = new Widget('log').startLoop();
+
+View the [MooDoc](http://moodocs.net/rpflo/mootools-rpflo/Loop) for usage and examples.
