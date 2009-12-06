@@ -12,6 +12,7 @@ How to use
 
 ### Example:
 
+    #JS
     var Widget = new Class({
       
       Implements: Loop,
