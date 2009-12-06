@@ -31,4 +31,8 @@ How to use
     var myWidget = new Widget('log').startLoop();
     
 
+### Demo:
+
+<iframe src="http://mooshell.net/rpflo/Abzc4/embedded/result,js,html" style="width: 100%; height:275px"></iframe>
+
 View the [MooDoc](http://moodocs.net/rpflo/mootools-rpflo/Loop) for usage and examples.
