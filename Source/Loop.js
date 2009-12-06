@@ -1,3 +1,27 @@
+/*
+---
+
+script: Loop.js
+
+description: Runs a class method on a periodical
+
+license: MIT-style license.
+
+authors: Ryan Florence <http://ryanflorence.com>
+
+docs: http://moodocs.net/rpflo/mootools-rpflo/Loop
+
+requires:
+- core
+
+provides: [Loop]
+
+...
+*/
+
+
+
+
 var Loop = new Class({
 
 	loopCount: 0,
