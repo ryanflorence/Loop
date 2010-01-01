@@ -36,8 +36,8 @@ window.addEvent('domready',function(){
 
 	$('restart').addEvent('click',function(){
 		($('up').checked) ? 
-			loop.setLoop(loop.up, $('delay').value).startLoop() : 
-			loop.setLoop(loop.down, $('delay').value).startLoop();
+			loop.setLoop(loop.up, $('delay').value) : 
+			loop.setLoop(loop.down, $('delay').value);
 	});
 
 });
