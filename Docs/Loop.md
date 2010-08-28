@@ -40,7 +40,7 @@ Useful in galleries, slideshows, tickers, sprite animations, pulsing, logout scr
       },
   
       update: function(count){
-        this.log.set('text',"Looped " + count + " times");
+        this.log.set('text', "Looped " + count + " times");
       }
   
     });

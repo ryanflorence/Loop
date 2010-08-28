@@ -18,23 +18,23 @@ var LoopTest = new Class({
   
 });
 
-window.addEvent('domready',function(){
+window.addEvent('domready', function(){
 
 	loop = new LoopTest('log');
 
-	$('start').addEvent('click',function(){
+	$('start').addEvent('click', function(){
 		loop.startLoop();
 	});
   
-	$('stop').addEvent('click',function(){
+	$('stop').addEvent('click', function(){
 		loop.stopLoop();
 	});
 
-	$('reset').addEvent('click',function(){
+	$('reset').addEvent('click', function(){
 		loop.resetLoop();
 	});
 
-	$('restart').addEvent('click',function(){
+	$('restart').addEvent('click', function(){
 		($('up').checked) ? 
 			loop.setLoop(loop.up, $('delay').value) : 
 			loop.setLoop(loop.down, $('delay').value);
