@@ -1,6 +1,8 @@
 /*
 ---
 
+name: Loop
+
 script: Loop.js
 
 description: Runs a class method on a periodical
@@ -12,7 +14,7 @@ authors: Ryan Florence <http://ryanflorence.com>
 docs: http://moodocs.net/rpflo/mootools-rpflo/Loop
 
 requires:
-- core:1.2.4/'*'
+  - Core/Class
 
 provides: [Loop]
 
