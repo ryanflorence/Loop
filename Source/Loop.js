@@ -12,7 +12,7 @@ authors: Ryan Florence <http://ryanflorence.com>
 docs: http://moodocs.net/rpflo/mootools-rpflo/Loop
 
 requires:
-- core:1.2.4/'*'
+- core:1.3/'*'
 
 provides: [Loop]
 
@@ -24,10 +24,10 @@ var Loop = new Class({
 	loopCount: 0,
 	isStopped: true,
 	isLooping: false,
-	loopMethod: $empty,
+	loopMethod: function(){},
 
-	setLoop: function(fn,delay){
-		if(this.isLooping) {
+	setLoop: function(fn, delay){
+		if (this.isLooping){
 			this.stopLoop();
 			var wasLooping = true;
 		} else {
@@ -35,19 +35,19 @@ var Loop = new Class({
 		}
 		this.loopMethod = fn;
 		this.loopDelay = delay || 3000;
-		if(wasLooping) this.startLoop();
+		if (wasLooping) this.startLoop();
 		return this;
 	},
 
-	stopLoop: function() {
+	stopLoop: function(){
 		this.isStopped = true;
 		this.isLooping = false;
-		$clear(this.periodical);
+		clearInterval(this.periodical);
 		return this;
 	},
 
-	startLoop: function(delay) {
-		if(this.isStopped){
+	startLoop: function(delay){
+		if (this.isStopped){
 			var delay = (delay) ? delay : this.loopDelay;
 			this.isStopped = false;
 			this.isLooping = true;
