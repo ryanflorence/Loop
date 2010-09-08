@@ -51,7 +51,7 @@ var Loop = new Class({
 			var delay = (delay) ? delay : this.loopDelay;
 			this.isStopped = false;
 			this.isLooping = true;
-			this.periodical = this.looper.periodical(delay,this);
+			this.periodical = this.looper.periodical(delay, this);
 		};
 		return this;
 	},
