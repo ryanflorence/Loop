@@ -14,7 +14,7 @@ authors: Ryan Florence <http://ryanflorence.com>
 docs: http://moodocs.net/rpflo/mootools-rpflo/Loop
 
 requires:
-  - Core/Class
+- Core:1.3/Class
 
 provides: [Loop]
 
@@ -26,7 +26,7 @@ var Loop = new Class({
 	loopCount: 0,
 	isStopped: true,
 	isLooping: false,
-	loopMethod: $empty,
+	loopMethod: function(){},
 
 	setLoop: function(fn, delay){
 		if (this.isLooping){
@@ -44,7 +44,7 @@ var Loop = new Class({
 	stopLoop: function(){
 		this.isStopped = true;
 		this.isLooping = false;
-		$clear(this.periodical);
+		clearInterval(this.periodical);
 		return this;
 	},
 
