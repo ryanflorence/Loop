@@ -1,7 +1,24 @@
 name: Loop
+
 author: rpflo
+
+copyright: "&copy; [Ryan Florence](http://ryanflorence.com)"
+
 category: Utilities
+
+description: "Runs a class method on a periodical"
+
 tags: [mixin]
+
 docs: http://moodocs.net/rpflo/mootools-rpflo/Loop
+
+web: "[moodocs.net/rpflo/mootools-rpflo/Loop](http://moodocs.net/rpflo/mootools-rpflo/Loop)"
+
 demo: http://mooshell.net/rpflo/Abzc4/embedded/result%2Cjs%2Chtml/
+
 current: 1.1
+
+license: MIT-style license.
+
+sources:
+  - "Source/Loop.js"
