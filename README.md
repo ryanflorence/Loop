@@ -32,8 +32,3 @@ How to use
     
 
 View the [MooDoc](http://moodocs.net/rpflo/mootools-rpflo/Loop) for usage and examples.
-
-Change Log
-----------
-
-* 2009-01-01 - `setLoop` now starts the loop again if it was already looping when `setLoop` was called.

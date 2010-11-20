@@ -3,8 +3,6 @@
 
 name: Loop
 
-script: Loop.js
-
 description: Runs a class method on a periodical
 
 license: MIT-style license.
@@ -14,7 +12,7 @@ authors: Ryan Florence <http://ryanflorence.com>
 docs: http://moodocs.net/rpflo/mootools-rpflo/Loop
 
 requires:
-- Core:1.3/Class
+- Core/Class
 
 provides: [Loop]
 
@@ -24,17 +22,12 @@ provides: [Loop]
 var Loop = new Class({
 
 	loopCount: 0,
-	isStopped: true,
 	isLooping: false,
 	loopMethod: function(){},
 
 	setLoop: function(fn, delay){
-		if (this.isLooping){
-			this.stopLoop();
-			var wasLooping = true;
-		} else {
-			var wasLooping = false;
-		}
+		wasLooping = this.isLooping;
+		if (wasLooping) this.stopLoop();
 		this.loopMethod = fn;
 		this.loopDelay = delay || 3000;
 		if (wasLooping) this.startLoop();
@@ -42,18 +35,15 @@ var Loop = new Class({
 	},
 
 	stopLoop: function(){
-		this.isStopped = true;
 		this.isLooping = false;
 		clearInterval(this.periodical);
 		return this;
 	},
 
 	startLoop: function(delay){
-		if (this.isStopped){
-			var delay = (delay) ? delay : this.loopDelay;
-			this.isStopped = false;
+		if (!this.isLooping){
 			this.isLooping = true;
-			this.periodical = this.looper.periodical(delay, this);
+			this.periodical = this.looper.periodical(delay || this.loopDelay, this);
 		};
 		return this;
 	},
