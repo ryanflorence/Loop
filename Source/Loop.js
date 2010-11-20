@@ -40,9 +40,10 @@ var Loop = new Class({
 		return this;
 	},
 
-	startLoop: function(delay){
+	startLoop: function(delay, now){
 		if (!this.isLooping){
 			this.isLooping = true;
+			if (now) this.looper();
 			this.periodical = this.looper.periodical(delay || this.loopDelay, this);
 		};
 		return this;
